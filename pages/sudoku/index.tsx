@@ -145,20 +145,44 @@ const Sudoku = () => {
         </>
       )}
       {!start && (
-        <div className="flex flex-row justify-center items-center gap-5">
-          <CustomButton onClick={() => handleGenerate('Iniciante')} ButtonType="btn-primary" isSave={type === "Iniciante"} disabled={isLoading}>
+        <div className="flex flex-wrap justify-center items-center gap-2 sm:gap-5">
+          <CustomButton
+            onClick={() => handleGenerate('Iniciante')}
+            ButtonType="btn-primary"
+            isSave={type === "Iniciante"}
+            disabled={isLoading}
+            Classname="w-full sm:w-auto"
+          >
             Iniciante
           </CustomButton>
 
-          <CustomButton onClick={() => handleGenerate('Intermediário')} ButtonType="btn-secondary" isSave={type === "Intermediário"} disabled={isLoading}>
+          <CustomButton
+            onClick={() => handleGenerate('Intermediário')}
+            ButtonType="btn-secondary"
+            isSave={type === "Intermediário"}
+            disabled={isLoading}
+            Classname="w-full sm:w-auto"
+          >
             Intermediário
           </CustomButton>
 
-          <CustomButton onClick={() => handleGenerate('Difícil')} ButtonType="btn-outline-primary" isSave={type === "Difícil"} disabled={isLoading}>
+          <CustomButton
+            onClick={() => handleGenerate('Difícil')}
+            ButtonType="btn-outline-primary"
+            isSave={type === "Difícil"}
+            disabled={isLoading}
+            Classname="w-full sm:w-auto"
+          >
             Difícil
           </CustomButton>
 
-          <CustomButton onClick={() => handleGenerate('Especialista')} ButtonType="btn-outline-secondary" isSave={type === "Especialista"} disabled={isLoading}>
+          <CustomButton
+            onClick={() => handleGenerate('Especialista')}
+            ButtonType="btn-outline-secondary"
+            isSave={type === "Especialista"}
+            disabled={isLoading}
+            Classname="w-full sm:w-auto"
+          >
             Especialista
           </CustomButton>
         </div>
